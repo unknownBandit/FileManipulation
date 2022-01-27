@@ -29,11 +29,11 @@ namespace FileManipulation
 
 
 
-                using (StreamWriter file = new("temp.txt", append: true))
+                using (StreamWriter file = new("Wrote.txt", append: true))
                 {
                     //700070 is the last line of i
                     //change the value according to number of lines in your file. 
-                    for (int i = 1; i <= 70; i++)
+                    for (int i = 2; i <= 300; i++)
                     {
                         for (int j = 1; j <= 2; j++)
                         {
