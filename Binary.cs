@@ -23,17 +23,17 @@ namespace FileManipulation
             try
             {
                 Excel.Application xlApp = new Excel.Application();
-                Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(@"C:\Users\Rex\Documents\work\Rasheed\FileManipulation\bin\Debug\net6.0\FileTest.csv");
+                Excel.Workbook xlWorkbook = xlApp.Workbooks.Open(@"C:\Users\Rex\Documents\SHSU\work\Rasheed\FileManipulation\bin\Debug\net6.0\FileTest.csv");
                 Excel._Worksheet xlWorkSheet = xlWorkbook.Sheets[1];
                 Excel.Range xlRange = xlWorkSheet.UsedRange;
 
 
 
-                using (StreamWriter file = new("Wrote.txt", append: true))
+                using (StreamWriter file = new("ValidationData.txt"))
                 {
                     //700070 is the last line of i
                     //change the value according to number of lines in your file. 
-                    for (int i = 2; i <= 300; i++)
+                    for (int i = 350036; i <= 700070; i++)
                     {
                         for (int j = 1; j <= 2; j++)
                         {
@@ -93,7 +93,7 @@ namespace FileManipulation
             */
 
             Console.WriteLine("\nDONE");
-            Console.ReadKey();
+            
         }
 
     }
