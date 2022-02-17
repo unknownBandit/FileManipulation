@@ -11,7 +11,7 @@ namespace FileManipulation
         private double[] doubleArray;
         private int initialization;
         private string fileToSave = string.Empty;
-        private int totalValue = 349734;
+        private int totalValue = 349733;
 
 
         public BestSegment(string filename, int a)
@@ -35,7 +35,7 @@ namespace FileManipulation
             double minimum = double.MaxValue;
             
             //int limit = 349734;
-            int limit = 5;
+            int limit = totalValue;
             double[] writeArray = new double[limit];
             for (int i=0; i<limit; i++)
             {
